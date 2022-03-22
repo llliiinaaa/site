@@ -38,10 +38,11 @@ header {
 .wrapper{
 	display: flex;
 	justify-content: space-between;
+	align-items:center;
+	margin-top: 55px;
 }
 
 .offer	{
- 	margin-top: 135px;
 	width: 580px;
 }
 
@@ -101,7 +102,7 @@ h1 span {
 .banner {
 	margin-top: 50px;
 	text-align: center;
-	width: 300px;
+	width: 289px;
 }
 
 
@@ -120,6 +121,10 @@ h3 {
 p {
 	font-size: 15px;
 }
+
+
+
+
 
 
 
@@ -157,9 +162,6 @@ input {
 
 
 
-
-
-
 footer {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -170,4 +172,74 @@ footer {
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
+}
+
+
+
+
+
+
+/*Responsive*/
+
+/*992 px - 1200 px*/
+@media	screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+
+	.img {
+		width: 550px;
+		height: 550px;
+	}
+}
+
+/*768 px - 992 px*/
+@media screen and (max-width: 992px){
+	.container{
+		width: 720px;
+	}
+
+	.wrapper{
+		flex-direction: column;
+	}
+
+	.img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/*576 px - 768 px*/
+@media	screen and (max-width: 768px){
+	.container{
+		width: 540px;
+	}
+
+	.offer {
+		width: 100%;
+	}
+}
+
+/*320 px - 576 px*/
+@media	screen and (max-width: 576px){
+	.container{
+		width: 90%;
+	}
+
+	.img {
+		width: 275px;
+		height: 275px;
+	}
+
+	.text {
+		width: 100%;
+	}
+
+	input {
+		width: 300px;
+	}
+
+	.btnn {
+		width: 300px;
+	}
 }
